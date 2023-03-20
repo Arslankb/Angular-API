@@ -1,0 +1,24 @@
+<!-- Get Data From API -->
+<!-- <h1>Getting Data From an API</h1>
+<ul>
+    <li *ngFor="let post of posts">
+        {{post.userId}}-- {{post.title}}
+    </li>
+</ul>  -->
+
+
+
+<!-- Post / Save Data in API -->
+
+
+<h1>Post Data</h1>
+ 
+<form #userForm = 'ngForm' (ngSubmit)="getUserFormData(userForm.value)">
+    <!-- <input type="id" ngModel name="userId" placeholder="Enter UserId">
+    <br><br> -->
+    <input type="text" ngModel name="title" placeholder="Enter title">
+    <br><br>
+    <input type="text" ngModel name="body" placeholder="Enter body">
+    <br><br>
+    <button>Add New Users</button>
+</form>
